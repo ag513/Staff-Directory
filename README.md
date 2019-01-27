@@ -1,2 +1,2 @@
 # Staff-Directory
-A project on Staff Directory of STIEN IAS
+A project on Staff Directory of Stien IAS
