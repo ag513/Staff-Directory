@@ -4,32 +4,42 @@ body {
   overflow-x: hidden;
 }
 
-/* .card-img-top {
-  width: 100%;
-  height: 23vw;
-  object-fit: cover;
-} */
-
 .img-divider {
   border-top: 2px solid;
 }
 
-.card-img-overlay {
-  position: absolute;
-  top: 170px;
-  bottom: 5px;
-  left: 160px;
+.button-overlay {
+  position: relative;
+  top: 55%;
+  float: right;
 }
 
 .btn-circle.btn-xl {
-  width: 70px;
-  height: 70px;
-  padding: 10px 16px;
-  border-radius: 35px;
-  font-size: 24px;
-  line-height: 1.33;
 }
 
+@media (min-width:1080px) {
+  .button-overlay-sm-xs {
+    position: relative;
+    top: 55%;
+    float: right;
+  }
+}
+
+@media (min-width:896px) and (max-width:1080px){
+  .button-overlay-sm-xs {
+    position: relative;
+    top: 45%;
+    float: right;
+  }
+}
+
+@media (min-width:696px) and (max-width:895px){
+  .button-overlay-sm-xs {
+    position: relative;
+    top: 30%;
+    float: right;
+  }
+}
 .btn-circle {
   width: 30px;
   height: 30px;

@@ -13,10 +13,10 @@ fetch('https://interview.dev.steinias.com/api/employees')
 
     myJson.forEach((o, index) => {
       str = str + `
-      <div class="card mb-3" style="max-width: 14rem;">
-      <img class=" card-img-top" src="./img/profile.png" alt="Card image cap" style="height:15vw; width: 231px">
+      <div class="mb-3 col-md-3 col-xs-12 col-sm-12">
+      <img class="img-fluid card-img-top" style="background-color:#f0eff4" src="./img/profile.png" alt="Card image cap" style="height:auto; max-width: 100%">
       <div class="card-img-overlay">
-        <button class="btn btn-sm btn-default btn-circle" data-toggle="modal" data-target="#exampleModalCenter-${index}"><i class="fa fa-list"></i></button>
+        <button class="btn btn-sm btn-default btn-circle button-overlay button-overlay-sm-xs" data-toggle="modal" data-target="#exampleModalCenter-${index}"><i class="fa fa-list"></i></button>
       </div>
       <div class="img-divider" style="border-color:black;"></div>
       <div class="card-body">
@@ -68,9 +68,9 @@ fetch('https://interview.dev.steinias.com/api/employees')
     </div>
      `
 
-     if((index+1)%5 == 0) {
-      str = str + `<div class="w-100 py-2"></div>`
-     }
+    //  if((index+1)%4 == 0) {
+    //   str = str + `<div class="w-100 py-2"></div>`
+    //  }
     });
     div = document.getElementById('body');
     div.insertAdjacentHTML('beforeend', str);
